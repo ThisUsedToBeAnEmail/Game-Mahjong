@@ -1,0 +1,28 @@
+#!/usr/bin/env perl
+use 5.010;
+use strict;
+use warnings;
+
+use Game::Mahjong::Terminal;
+
+our $VERSION = '0.04';
+
+exit Game::Mahjong::Terminal->run(@ARGV);
+
+__END__
+
+=head1 NAME
+
+mahjong - play Mahjong against three bots at the keyboard
+
+=head1 SYNOPSIS
+
+    mahjong
+    mahjong --seed evening --level 3 --glyphs
+    mahjong --auto
+
+=head1 DESCRIPTION
+
+See L<Game::Mahjong::Terminal>.
+
+=cut
